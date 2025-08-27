@@ -29,6 +29,10 @@ body {
     font-family: "TT Lakes Bold";
 }
 
+button {
+    font-family: "TT Lakes Bold";
+}
+
 header {
     background-image: linear-gradient(#F8F8F8, #FFFFFF);
 }
