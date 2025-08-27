@@ -8,6 +8,10 @@
     .swiper-wrapper {
         display: none !important;
     }
+    .swiper-slide {
+    width: 240px; /* фиксированная ширина */
+    height: 72px; /* фиксированная высота */
+  }
 
     .viewsonic {
         display: none !important;
