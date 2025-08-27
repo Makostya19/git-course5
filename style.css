@@ -1,0 +1,155 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .biger {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .mobile {
+        display: none;
+    }
+
+    .viewsonic {
+        display: none !important;
+    }
+
+    .sony {
+        display: none !important;
+    }
+}
+
+@media (1120px <= width) {
+    .mobile {
+        display: none;
+    }
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+header {
+    background-image: linear-gradient(#F8F8F8, #FFFFFF);
+}
+
+p {
+    font-size: 16px;
+}
+
+.mobile {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease; /* плавная прокрутка */
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.cat {
+    display: flex;               /* делаем кнопку flex-контейнером */
+    justify-content: space-between; 
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.first {
+    display: flex;
+}
+
+.second {
+    display: flex;
+}
+
+.viewsonic {
+    display: flex;               /* делаем кнопку flex-контейнером */
+    justify-content: space-between; 
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.sony {
+    display: flex;               /* делаем кнопку flex-контейнером */
+    justify-content: space-between; /* первый элемент слева, второй справа */
+    align-items: center;         /* вертикальное выравнивание по центру */
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+/* помощь */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Главная кнопка */
+#main-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  margin-top: 15px;
+}
+
+/* Блок с кнопками сверху */
+#extra-btns {
+  display: none; /* спрятаны по умолчанию */
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Кнопки */
+.extra-btn {
+  width: 240px;
+  height: 72px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  justify-content: space-between; /* одна картинка слева, другая справа */
+  align-items: center;
+  padding: 0 15px;
+}
