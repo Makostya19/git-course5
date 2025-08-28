@@ -2,6 +2,29 @@
     .biger {
         display: none;
     }
+
+    .swiper-pagination {
+    display: block !important;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 120px !important;
+    text-align: center;
+    z-index: 10;
+  }
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: #999;
+    opacity: 1;
+    border-radius: 50%;
+    margin: 0 4px;
+    display: inline-block;
+  }
+  .swiper-pagination-bullet-active {
+    background: #333;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -199,9 +222,3 @@ p {
   font-size: 16px;
 }
 
-/* пагинация ниже кнопок */
-.swiper-pagination {
-  position: relative;
-  margin-top: 10px;
-  text-align: center;
-}
