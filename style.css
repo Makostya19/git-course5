@@ -8,6 +8,7 @@
     .swiper-wrapper {
         display: none !important;
     }
+    
     .swiper-slide {
     width: 240px; /* фиксированная ширина */
     height: 72px; /* фиксированная высота */
@@ -175,8 +176,8 @@ p {
 
 .swiper-slide {
   flex: 0 0 auto;
-  width: 240px;
-  height: 72px;
+  width: 240px !important;
+  height: 72px !important;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   display: flex;
